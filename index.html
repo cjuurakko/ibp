@@ -1,0 +1,19 @@
+<!doctype HTML>
+<html>
+   
+<script src="vendor/aframe/build/aframe.min.js"></script>
+<script src="../build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='trackingMethod: best'>
+      <a-anchor hit-testing-enabled='true'>
+		   <a-box position='0 0.5 0'></a-box>
+      </a-anchor>
+      <a-entity>
+         obj-model="obj: url(https://github.com/cjuurakko/ibp/ibp2.obj);
+         mtl: url(https://github.com/cjuurakko/ibp/ib2.obj.mtl)">
+      </a-entity>
+		<a-camera-static/>
+      
+	</a-scene>
+</body>
+</html>
