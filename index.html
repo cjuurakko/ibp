@@ -8,10 +8,14 @@
       <a-anchor hit-testing-enabled='true'>
 		   <a-box position='0 0.5 0'></a-box>
       </a-anchor>
-      <a-entity>
-         obj-model="obj: url(https://github.com/cjuurakko/ibp/blob/master/ibp2.obj);
-         mtl: url(https://github.com/cjuurakko/ibp/blob/master/ibp2.obj.mtl)">
-      </a-entity>
+		
+	<a-assets>
+    <a-asset-item id="ibp-obj" src="https://github.com/cjuurakko/ibp/blob/master/ibp2.obj"></a-asset-item>
+    <a-asset-item id="ibp-mtl" src="https://github.com/cjuurakko/ibp/blob/master/ibp2.obj.mtl"></a-asset-item>
+  </a-assets>
+
+  <a-entity obj-model="obj: #ibp-obj; mtl: #ibp-mtl" position="0 0 -5" scale="0.5 0.5 0.5></a-entity>
+		
 		<a-camera-static/>
       
 	</a-scene>
